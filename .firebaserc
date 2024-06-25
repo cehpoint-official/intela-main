@@ -1,5 +1,16 @@
 {
   "projects": {
     "default": "intela-main"
-  }
+  },
+  "targets": {
+    "intela-main": {
+      "hosting": {
+        "tr": [
+          "intela-main"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
