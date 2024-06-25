@@ -65,7 +65,7 @@ const CsFeature1 = () => {
       console.error('Error adding document: ', error);
     }
   };
-  
+
   const [items, setItems] = useState([]);
   useEffect(() => {
     const unsubscribe = onSnapshot(collection(db, 'cyber-security'), (snapshot) => {
@@ -102,7 +102,7 @@ const CsFeature1 = () => {
       <div className="mx-4 md:mx-8 bg-[#072966] lg:mx-20 rounded-2xl ">
         <div className="flex flex-col md:flex-row justify-center items-center h-full lg:mt-[25%]">
           <div className="w-full md:w-1/2 mx-10 md:mx-10 my-10 pl-8 bg-[#011b4911]">
-          {items ? (
+            {items ? (
               items.map(item => (
                 // Ensure that `item.paragraph1` matches the field name in your Firestore documents
                 <div key={item.id}>
